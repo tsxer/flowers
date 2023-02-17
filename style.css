@@ -157,17 +157,17 @@ p {
   background: #f3f4f6;
   display: flex;
 }
-.review {
+.footer {
   padding: 88px 0 88px 97px;
 }
-.review__title {
+.footer__title {
   font-weight: 700;
   font-size: 40px;
   line-height: 56px;
   color: #2c1500;
   margin-bottom: 32px;
 }
-.review__btn {
+.footer__btn {
   border: 0;
   display: inline-block;
   padding: 10px 42px;
