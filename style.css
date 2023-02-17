@@ -1,0 +1,182 @@
+body {
+  margin: 0;
+  color: #2c1500;
+  font-family: "Montserrat", sans-serif;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: #2c1500;
+}
+h1,
+p {
+  margin: 0;
+}
+.wrapper {
+  padding: 40px 55px;
+  max-width: 1920px;
+  margin-inline: auto;
+}
+.container {
+  max-width: 1168px;
+  margin-inline: auto;
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.btn {
+  border: 0;
+  display: inline-block;
+  padding: 8px 20px;
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  color: #ffffff;
+  min-width: 111px;
+}
+.btn_link {
+  color: #156963;
+}
+.btn_primary {
+  background: #156963;
+}
+.main-section {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.brand {
+  max-width: 520px;
+  margin-inline: auto;
+  text-align: center;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.brand__desc {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  opacity: 0.8;
+}
+.brand__title {
+  font-weight: 500;
+  font-size: 68px;
+  line-height: 83px;
+  color: #156963;
+  margin-bottom: 24px;
+}
+.services-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 32px;
+  margin-bottom: 80px;
+}
+.item {
+  display: grid;
+  gap: 16px;
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  padding: 22px 16px;
+}
+.item__header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.item__title {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: #156963;
+}
+.item__desc {
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 16px;
+}
+@media (max-width: 599px) {
+  .services-section {
+    grid-template-columns: 1fr;
+  }
+  .featured-plants {
+    grid-template-columns: 1fr;
+  }
+
+  .shop-section {
+    display: inline-block;
+  }
+}
+.featured-section {
+  margin-bottom: 80px;
+}
+.featured-section__title {
+  text-align: center;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000000;
+  margin-bottom: 16px;
+}
+.featured-section__line {
+  max-width: 1168px;
+  height: 0px;
+  border: 1px solid #e0e0e0;
+  margin-bottom: 30px;
+}
+.featured-plants {
+  justify-content: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 20px;
+}
+.item {
+  display: grid;
+  text-align: center;
+}
+.item__name {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+  margin-top: 16px;
+}
+.item__price {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+  margin-top: 8px;
+}
+.shop-section {
+  background: #f3f4f6;
+  display: flex;
+}
+.review {
+  padding: 88px 0 88px 97px;
+}
+.review__title {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 56px;
+  color: #2c1500;
+  margin-bottom: 32px;
+}
+.review__btn {
+  border: 0;
+  display: inline-block;
+  padding: 10px 42px;
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  color: #fafefe;
+  min-width: 152px;
+  background: #156963;
+}
