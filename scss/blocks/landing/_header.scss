@@ -1,0 +1,79 @@
+//  Hlavná sekcia hlavičky
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__nav-list {
+    display: flex;
+    gap: 32px;
+  }
+
+  &__nav-link {
+    font-family: $font-secondary;
+    font-weight: 700;
+    font-size: $font-size-medium;
+    line-height: $line-height-base;
+    transition: $transition-default;
+  }
+
+  &__nav-link:hover {
+    color: $primary-color;
+  }
+}
+
+//  Skryté hamburger menu 
+#hamburger {
+  display: none;
+}
+
+// Responzívne nastavenia pre menšie zariadenia
+@media (max-width: $breakpoint-md) {
+  #main-menu {
+    display: none;
+
+    &.responsive {
+      position: fixed;
+      top: 0;
+      right: 0;
+      width: 150px;
+      height: 100%;
+      background-color: $border-color;
+      box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+      z-index: 5;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      justify-content: center;
+      align-items: center;
+      opacity: 0.9;
+
+      li {
+        display: block;
+        margin-bottom: 10px;
+        z-index: 5;
+      }
+
+      a {
+        font-weight: 500;
+        font-family: $font-secondary;
+        font-size: $font-size-medium;
+        line-height: $line-height-base;
+        transition: $transition-default;
+      }
+    }
+  }
+
+  #hamburger {
+    display: block;
+    z-index: 999;
+  }
+}

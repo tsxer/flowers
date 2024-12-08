@@ -1,0 +1,39 @@
+// Colors
+$primary-color: #156963;
+$primary-color-hover: #125a55;
+$gray-color: #4f4f4f;
+$secondary-color: #2c1500;
+$background-color: #f3f4f6;
+$text-color: #000000;
+$border-color: #e0e0e0;
+
+// Fonts
+$font-primary: "Montserrat", sans-serif;
+$font-secondary: "Nunito", sans-serif;
+
+// Font Sizes
+$font-size-small: 10px;
+$font-size-base: 16px;
+$font-size-medium: 18px;
+$font-size-large: 20px;
+$font-size-xl: 40px;
+$font-size-xxl: 68px;
+
+// Line Heights
+$line-height-small: 16px;
+$line-height-base: 20px;
+$line-height-medium: 24px;
+$line-height-large: 32px;
+$line-height-xl: 56px;
+$line-height-xxl: 83px;
+
+// Breakpoints
+$breakpoint-sm: 600px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 1024px;
+
+// Box Shadow
+$box-shadow: inset 0 0 0 0 $primary-color;
+
+// Transition
+$transition-default: ease-out 0.5s;

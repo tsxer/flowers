@@ -1,0 +1,75 @@
+// Sekcia odporúčaných produktov
+.featured {
+  margin-bottom: 80px;
+
+  // Nadpis sekcie
+  &__title {
+    text-align: center;
+    font-weight: 500;
+    font-size: $font-size-large;
+    line-height: $line-height-medium;
+    margin-bottom: 16px;
+  }
+
+  // Oddelovacia čiara
+  &__line {
+    max-width: 1168px;
+    height: 0px;
+    border: 1px solid $border-color;
+    margin-bottom: 30px;
+  }
+
+  // Zoznam odporúčaných produktov
+  &__list {
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+  }
+
+  // Jednotlivé prvky v zozname
+  &__item {
+    display: grid;
+    text-align: center;
+  }
+
+  // Názov produktu
+  &__name {
+    font-weight: 400;
+    font-size: $font-size-base;
+    line-height: $line-height-base;
+    margin-top: 16px;
+  }
+
+  // Cena produktu
+  &__price {
+    font-weight: 600;
+    font-size: $font-size-base;
+    line-height: $line-height-base;
+    margin-top: 8px;
+  }
+}
+
+// Responzívne nastavenia pre väčšie obrazovky
+@media (max-width: $breakpoint-lg) {
+  .featured {
+    &__list {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    &__item {
+      justify-content: center;
+    }
+  }
+}
+
+// Responzívne nastavenia pre veľmi malé obrazovky
+@media (max-width: $breakpoint-sm) {
+  .featured {
+    &__list {
+      grid-template-columns: repeat(1, 1fr);
+    }
+    &__item {
+      justify-content: center;
+    }
+  }
+}

@@ -1,0 +1,72 @@
+// Sekcia obchodu
+.shop-section {
+  background: $background-color; // Nastavenie pozadia
+  display: flex;
+  margin-bottom: 50px; // Medzera medzi sekciami
+
+  // Obsah v rámci sekcie obchodu
+  &__content {
+    padding: 88px 0 88px 97px;
+  }
+
+  // Nadpis v sekcii obchodu
+  &__title {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 56px;
+    color: $secondary-color;
+    margin-bottom: 32px;
+  }
+
+  // Tlačidlá v sekcii obchodu
+  &__btn {
+    border: 0;
+    display: inline-block;
+    padding: 10px 42px;
+    border-radius: 3px;
+    font-family: $font-secondary;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: $line-height-base;
+    text-align: center;
+    color: $background-color;
+    max-width: 152px;
+    background: $primary-color;
+    transition: $transition-default;
+    box-shadow: $box-shadow;
+
+    // Interaktívne efekty
+    &:hover,
+    &:active {
+      background: $primary-color-hover;
+    }
+  }
+}
+
+// Responzívne nastavenia pre stredne veľké obrazovky
+@media (max-width: $breakpoint-lg) {
+  .shop-section {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    &__content {
+      padding: 88px 0 88px 0;
+    }
+
+    &__title {
+      font-size: 32px;
+      line-height: 48px;
+      margin-bottom: 16px;
+      max-width: 400px;
+    }
+
+    &__btn {
+      padding: 10px 32px;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+}

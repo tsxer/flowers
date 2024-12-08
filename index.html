@@ -5,139 +5,235 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Flowers</title>
+    <!-- Preconnect na Google Fonts pre optimalizáciu rýchlosti -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Importovanie fontov z Google Fonts -->
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Nunito:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
+    <!-- Importovanie ikon z Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+    <!-- Prepojenie na hlavný CSS súbor -->
+    <link rel="stylesheet" href="css/main.css" />
+    <!-- Favicon pre stránku -->
+    <link rel="shortcut icon" href="img/logo.svg" />
   </head>
   <body>
-    <div class="wrapper">
-      <div class="container">
-        <section class="main-section">
-          <header class="header">
-            <a href="#" class="header__logo">
-              <img src="img/logo.svg" alt="logo" />
+    <!-- Hlavný obal stránky -->
+    <div class="page">
+      <div class="page__wrapper">
+        <!-- Hlavička stránky -->
+        <header class="header">
+          <div class="header__logo">
+            <!-- Logo stránky s odkazom na hlavnú stránku -->
+            <a href="index.html" class="header__logo-link">
+              <img src="img/logo.svg" alt="logo" class="header__logo-image" />
             </a>
-            <div class="header__auth">
-              <a class="btn btn_link" href="/">Sign up</a>
-              <a class="btn btn_primary" href="/">Sign in</a>
+          </div>
+          <nav class="header__nav">
+            <!-- Navigačné menu -->
+            <ul class="header__nav-list" id="main-menu">
+              <li class="header__nav-item">
+                <a class="header__nav-link" href="products.html">Products</a>
+              </li>
+              <li class="header__nav-item">
+                <a class="header__nav-link" href="qna.html">Q&A</a>
+              </li>
+              <li class="header__nav-item">
+                <a class="header__nav-link" href="contact.html">Contact us</a>
+              </li>
+            </ul>
+            <!-- Ikona pre hamburger menu -->
+            <div class="hamburger" id="hamburger">
+              <span class="material-symbols-outlined" id="open"> menu </span>
             </div>
-          </header>
-          <div class="brand">
-            <h1 class="brand__title">Kembang Flower Mantap</h1>
-            <p class="brand__desc">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s,
+          </nav>
+        </header>
+
+        <!-- Sekcia značky -->
+        <section class="brand">
+          <h1 class="brand__title">Plantiverse</h1>
+          <p class="brand__description">
+            Discover Plantiverse — your go-to destination for unique and
+            affordable plants. We offer a wide selection to brighten your home,
+            garden, or workspace. Quality, variety, and inspiration in every
+            green addition!
+          </p>
+        </section>
+
+        <!-- Sekcia služieb -->
+        <section class="services">
+          <div class="services__item">
+            <div class="services__header">
+              <div class="services__icon">
+                <!-- Ikona pre rýchle doručenie -->
+                <img src="img/icons/1.svg" alt="Delivery" />
+              </div>
+              <h3 class="services__title">Fast Delivery</h3>
+            </div>
+            <p class="services__description">
+              Quick and reliable delivery to your door.
+            </p>
+          </div>
+          <div class="services__item">
+            <div class="services__header">
+              <div class="services__icon">
+                <!-- Ikona pre zákaznícku podporu -->
+                <img src="img/icons/2.svg" alt="Support" />
+              </div>
+              <h3 class="services__title">Great Customer Service</h3>
+            </div>
+            <p class="services__description">
+              Friendly support anytime you need assistance.
+            </p>
+          </div>
+          <div class="services__item">
+            <div class="services__header">
+              <div class="services__icon">
+                <!-- Ikona pre originálne rastliny -->
+                <img src="img/icons/3.svg" alt="Plants" />
+              </div>
+              <h3 class="services__title">Original Plants</h3>
+            </div>
+            <p class="services__description">
+              Unique, high-quality plants for your space.
+            </p>
+          </div>
+          <div class="services__item">
+            <div class="services__header">
+              <div class="services__icon">
+                <!-- Ikona pre dostupnú cenu -->
+                <img src="img/icons/4.svg" alt="Price" />
+              </div>
+              <h3 class="services__title">Affordable Price</h3>
+            </div>
+            <p class="services__description">
+              Great value without breaking the bank.
             </p>
           </div>
         </section>
-        <section class="services-section">
-          <div class="services-section__item item">
-            <div class="item__header">
-              <div class="item__icon">
-                <img src="img/icons/1.svg" alt="Delivery" />
-              </div>
-              <div class="item__title">Fast Delivery</div>
+
+        <!-- Sekcia s ukážkovými rastlinami -->
+        <section class="featured">
+          <h2 class="featured__title">Featured Plants</h2>
+          <div class="featured__line"></div>
+          <div class="featured__list">
+            <div class="featured__item">
+              <img
+                src="img/flowers/1.png"
+                alt="Flower"
+                class="featured__image"
+              />
+              <h3 class="featured__name">Kaktus Plants</h3>
+              <div class="featured__price">EUR 5.00</div>
             </div>
-            <div class="item__desc">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard
+            <div class="featured__item">
+              <img
+                src="img/flowers/2.png"
+                alt="Flower"
+                class="featured__image"
+              />
+              <h3 class="featured__name">Landak Plants</h3>
+              <div class="featured__price">EUR 6.50</div>
             </div>
-          </div>
-          <div class="services-section__item item">
-            <div class="item__header">
-              <div class="item__icon">
-                <img src="img/icons/2.svg" alt="Suport" />
-              </div>
-              <div class="item__title">Great Customer Service</div>
+            <div class="featured__item">
+              <img
+                src="img/flowers/3.png"
+                alt="Flower"
+                class="featured__image"
+              />
+              <h3 class="featured__name">Kecubung Plants</h3>
+              <div class="featured__price">EUR 7.00</div>
             </div>
-            <div class="item__desc">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard
+            <div class="featured__item">
+              <img
+                src="img/flowers/4.png"
+                alt="Flower"
+                class="featured__image"
+              />
+              <h3 class="featured__name">Melati Plants</h3>
+              <div class="featured__price">EUR 8.00</div>
             </div>
-          </div>
-          <div class="services-section__item item">
-            <div class="item__header">
-              <div class="item__icon">
-                <img src="img/icons/3.svg" alt="Plants" />
-              </div>
-              <div class="item__title">Original Plants</div>
-            </div>
-            <div class="item__desc">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard
-            </div>
-          </div>
-          <div class="services-section__item item">
-            <div class="item__header">
-              <div class="item__icon">
-                <img src="img/icons/4.svg" alt="Price" />
-              </div>
-              <div class="item__title">Affordable Price</div>
-            </div>
-            <div class="item__desc">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard
-            </div>
-          </div>
-        </section>
-        <section class="featured-section">
-          <div class="featured-section__title">Featured Plants</div>
-          <div class="featured-section__line"></div>
-          <div class="featured-plants">
-            <div class="featured-plants__item item">
-              <div class="item__img">
-                <img src="img/flowers/1.png" alt="Flower" />
-              </div>
-              <div class="item__name">Kaktus Plants</div>
-              <div class="item__price">IDR 85.000</div>
-            </div>
-            <div class="featured-plants__item item">
-              <div class="item__img">
-                <img src="img/flowers/2.png" alt="Flower" />
-              </div>
-              <div class="item__name">Landak Plants</div>
-              <div class="item__price">IDR 105.000</div>
-            </div>
-            <div class="featured-plants__item item">
-              <div class="item__img">
-                <img src="img/flowers/3.png" alt="Flower" />
-              </div>
-              <div class="item__name">Kecubung Plants</div>
-              <div class="item__price">IDR 85.000</div>
-            </div>
-            <div class="featured-plants__item item">
-              <div class="item__img">
-                <img src="img/flowers/4.png" alt="Flower" />
-              </div>
-              <div class="item__name">Kecubung Plants</div>
-              <div class="item__price">IDR 85.000</div>
-            </div>
-            <div class="featured-plants__item item">
-              <div class="item__img">
-                <img src="img/flowers/5.png" alt="Flower" />
-              </div>
-              <div class="item__name">Kecubung Plants</div>
-              <div class="item__price">IDR 85.000</div>
+            <div class="featured__item">
+              <img
+                src="img/flowers/5.png"
+                alt="Flower"
+                class="featured__image"
+              />
+              <h3 class="featured__name">Anggrek Plants</h3>
+              <div class="featured__price">EUR 9.50</div>
             </div>
           </div>
         </section>
+
+        <!-- Sekcia obchodu -->
         <section class="shop-section">
-          <div class="shop-section__footer footer">
-            <div class="footer__title">
-              Get your favourites plant on our shop now
+          <div class="shop-section__content">
+            <div class="shop-section__title">
+              Get your favourite plants in our shop now
             </div>
-            <a class="footer__btn" href="/">Visit Shop</a>
+            <a class="shop-section__btn" href="products.html">Visit Shop</a>
           </div>
-          <div class="footer__img">
-            <img src="img/flowers/6.png" alt="footer flower" />
+          <div class="shop-section__image">
+            <img src="img/flowers/6.png" alt="Shop Flower" />
           </div>
         </section>
+
+        <!-- Pätka stránky -->
+        <footer class="footer">
+          <div class="footer__row">
+            <div class="footer__column">
+              <h3 class="footer__title1">Flower Shop</h3>
+              <h4 class="footer__title2">Your Trusted Source for Plants</h4>
+              <p class="footer__description">
+                Discover a wide selection of beautiful plants and helpful tips
+                for their care.
+              </p>
+            </div>
+            <div class="footer__column">
+              <h3 class="footer__subtitle">Menu</h3>
+              <ul class="footer__links">
+                <li>
+                  <a href="products.html" class="footer__link">Products</a>
+                </li>
+                <li><a href="qna.html" class="footer__link">Q&A</a></li>
+                <li>
+                  <a href="contact.html" class="footer__link">Contact us</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__column">
+              <h3 class="footer__subtitle">Help</h3>
+              <ul class="footer__links">
+                <li>
+                  <a href="#" class="footer__link">FAQ</a>
+                </li>
+                <li>
+                  <a href="#" class="footer__link">Shipping Information</a>
+                </li>
+                <li>
+                  <a href="#" class="footer__link">Returns & Exchanges</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__column">
+              <h3 class="footer__subtitle">Contact us</h3>
+              <a href="telto:0952026586" class="footer__link">+421952026586</a>
+              <a href="mailto:damir.kudinov@gmail.com" class="footer__link"
+                >damir.kudinov@gmail.com</a
+              >
+            </div>
+          </div>
+          <div class="footer__credits">Created by: Damir Kudinov</div>
+        </footer>
       </div>
     </div>
+    <!-- Skript pre hamburger menu -->
+    <script src="js/hamburger.js"></script>
   </body>
 </html>

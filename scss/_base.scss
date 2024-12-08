@@ -1,0 +1,51 @@
+// Nastavenie box-sizing pre všetky elementy a ich pseudo-elementy //
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+// Základné nastavenia pre telo stránky //
+body {
+  font-family: $font-primary;
+  margin: 0;
+  color: #2c1500;
+  box-sizing: border-box;
+}
+
+// Odstránenie podčiarknutia od všetkých odkazov //
+a {
+  text-decoration: none;
+  color: #2c1500;
+}
+
+// Základné nastavenie pre zoznamy, nadpisy a paragrafy //
+ul,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+// Odstránenie štandardného odrážkového štýlu pre zoznamy //
+li {
+  list-style: none;
+}
+
+// Štruktúra hlavnej stránky s maximálnou šírkou a paddingom //
+.page {
+  padding: 40px 55px;
+  max-width: 1920px;
+  margin-inline: auto;
+
+  // Obmedzenie maximálnej šírky pre vnútorný wrapper //
+  &__wrapper {
+    max-width: 1168px;
+    margin-inline: auto;
+  }
+}

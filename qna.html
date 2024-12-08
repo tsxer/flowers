@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flowers</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Nunito:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="shortcut icon" href="img/logo.svg" />
+  </head>
+  <body>
+    <div class="page">
+      <div class="page__wrapper">
+        <header class="header">
+          <div class="header__logo">
+            <a href="index.html" class="header__logo-link">
+              <img src="img/logo.svg" alt="logo" class="header__logo-image" />
+            </a>
+          </div>
+          <nav class="header__nav">
+            <ul class="header__nav-list" id="main-menu">
+              <li class="header__nav-item">
+                <a class="header__nav-link" href="products.html">Products</a>
+              </li>
+              <li class="header__nav-item">
+                <a class="header__nav-link" href="qna.html">Q&A</a>
+              </li>
+              <li class="header__nav-item">
+                <a class="header__nav-link" href="contact.html">Contact us</a>
+              </li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+              <span class="material-symbols-outlined" id="open"> menu </span>
+            </div>
+          </nav>
+        </header>
+
+        <section class="faq">
+          <h2 class="faq__title">Frequently Asked Questions</h2>
+          <div class="faq__accordion">
+            <div class="faq__question">What is our return policy?</div>
+            <div class="faq__answer">
+              You can return items within 30 days of purchase.
+            </div>
+          </div>
+          <div class="faq__accordion">
+            <div class="faq__question">Do we ship internationally?</div>
+            <div class="faq__answer">Yes, we offer international shipping.</div>
+          </div>
+          <div class="faq__accordion">
+            <div class="faq__question">How to care for plants?</div>
+            <div class="faq__answer">
+              Check our care tips on the blog section.
+            </div>
+          </div>
+        </section>
+
+        <section class="allergy">
+          <h2 class="allergy__title">Allergy Information</h2>
+          <table class="allergy__table">
+            <thead class="allergy__thead">
+              <tr class="allergy__row">
+                <th class="allergy__header"><strong>Plant Name</strong></th>
+                <th class="allergy__header">
+                  <strong>Allergen Source</strong>
+                </th>
+                <th class="allergy__header"><strong>Symptoms</strong></th>
+                <th class="allergy__header">
+                  <strong>Recommendations</strong>
+                </th>
+              </tr>
+            </thead>
+            <tbody class="allergy__tbody">
+              <tr class="allergy__row">
+                <td class="allergy__cell">Ragweed</td>
+                <td class="allergy__cell">Pollen</td>
+                <td class="allergy__cell">Runny nose, itchy eyes, sneezing</td>
+                <td class="allergy__cell">
+                  Avoid direct contact. Keep away during the blooming season.
+                </td>
+              </tr>
+              <tr class="allergy__row">
+                <td class="allergy__cell">Ficus</td>
+                <td class="allergy__cell">Plant Sap</td>
+                <td class="allergy__cell">
+                  Skin irritation, potential contact dermatitis
+                </td>
+                <td class="allergy__cell">
+                  Wear gloves when handling. Avoid sap contact with skin.
+                </td>
+              </tr>
+              <tr class="allergy__row">
+                <td class="allergy__cell">Lavender</td>
+                <td class="allergy__cell">Strong Fragrance</td>
+                <td class="allergy__cell">Headaches, throat irritation</td>
+                <td class="allergy__cell">
+                  Avoid placing in bedrooms or near sensitive individuals.
+                </td>
+              </tr>
+              <tr class="allergy__row">
+                <td class="allergy__cell">Monstera</td>
+                <td class="allergy__cell">Plant Sap</td>
+                <td class="allergy__cell">
+                  Mucous membrane irritation, skin burning
+                </td>
+                <td class="allergy__cell">Keep away from children and pets.</td>
+              </tr>
+              <tr class="allergy__row">
+                <td class="allergy__cell">Jasmine</td>
+                <td class="allergy__cell">Fragrance</td>
+                <td class="allergy__cell">Dizziness, respiratory irritation</td>
+                <td class="allergy__cell">Use in well-ventilated areas.</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+        <footer class="footer">
+          <div class="footer__row">
+            <div class="footer__column">
+              <h3 class="footer__title1">Flower Shop</h3>
+              <h4 class="footer__title2">Your Trusted Source for Plants</h4>
+              <p class="footer__description">
+                Discover a wide selection of beautiful plants and helpful tips
+                for their care.
+              </p>
+            </div>
+            <div class="footer__column">
+              <h3 class="footer__subtitle">Menu</h3>
+              <ul class="footer__links">
+                <li>
+                  <a href="products.html" class="footer__link">Products</a>
+                </li>
+                <li><a href="qna.html" class="footer__link">Q&A</a></li>
+                <li>
+                  <a href="contact.html" class="footer__link">Contact us</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__column">
+              <h3 class="footer__subtitle">Help</h3>
+              <ul class="footer__links">
+                <li>
+                  <a href="#" class="footer__link">FAQ</a>
+                </li>
+                <li>
+                  <a href="#" class="footer__link">Shipping Information</a>
+                </li>
+                <li>
+                  <a href="#" class="footer__link">Returns & Exchanges</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__column">
+              <h3 class="footer__subtitle">Contact us</h3>
+              <a href="telto:0952026586" class="footer__link">+421952026586</a>
+              <a href="mailto:damir.kudinov@gmail.com" class="footer__link"
+                >damir.kudinov@gmail.com</a
+              >
+            </div>
+          </div>
+          <div class="footer__credits">Created by: Damir Kudinov</div>
+        </footer>
+      </div>
+    </div>
+    <script src="js/accordion.js"></script>
+    <script src="js/hamburger.js"></script>
+  </body>
+</html>

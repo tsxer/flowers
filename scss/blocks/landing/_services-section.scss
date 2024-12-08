@@ -1,0 +1,56 @@
+// Sekcia služieb
+.services {
+  display: grid; // Nastavenie na Grid layout
+  grid-template-columns: repeat(4, 1fr); // 4 stĺpce v mriežke
+  gap: 32px; // Medzera medzi prvkami
+  margin-bottom: 80px;
+
+  // Individuálny prvok v sekcii služieb
+  &__item {
+    display: grid;
+    gap: 16px;
+    padding: 22px 16px;
+    text-align: center;
+  }
+
+  // Hlavička pre každú službu
+  &__header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+
+  // Nadpis služby
+  &__title {
+    font-weight: 700;
+    font-size: $font-size-base;
+    line-height: $line-height-medium;
+    color: $primary-color;
+    margin: auto;
+  }
+
+  // Popis služby
+  &__description {
+    font-weight: 400;
+    font-size: $font-size-small;
+    line-height: $line-height-small;
+  }
+}
+
+// Responzívne nastavenia pre stredne veľké obrazovky
+@media (max-width: $breakpoint-lg) {
+  .services {
+    grid-template-columns: repeat(2, 1fr); // 2 stĺpce pre menšie obrazovky
+  }
+}
+
+// Responzívne nastavenia pre malé obrazovky
+@media (max-width: $breakpoint-sm) {
+  .services {
+    grid-template-columns: repeat(
+      1,
+      1fr
+    ); // 1 stĺpec na veľmi malých obrazovkách
+    text-align: center;
+  }
+}

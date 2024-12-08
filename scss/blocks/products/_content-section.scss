@@ -1,0 +1,94 @@
+// Obsahová sekcia
+.content {
+  margin-bottom: 80px; // Medzera medzi sekciami
+
+  // Nadpis v obsahovej sekcii
+  &__title {
+    text-align: center;
+    font-weight: 500;
+    font-size: $font-size-large;
+    line-height: $line-height-large;
+    margin-bottom: 16px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid $border-color;
+  }
+
+  // Grid pre obsahovú sieť
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    place-items: center;
+  }
+
+  // Obsahové položky
+  &__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+  }
+
+  // Obrázky v obsahovej sieti
+  &__image {
+    max-width: 218px;
+    max-height: 218px;
+  }
+
+  // Názvy produktov
+  &__name {
+    font-weight: 400;
+    font-size: $font-size-base;
+    line-height: 20px;
+    margin-top: 16px;
+  }
+
+  // Ceny produktov
+  &__price {
+    font-weight: 600;
+    font-size: $font-size-base;
+    line-height: 20px;
+    margin-top: 8px;
+  }
+
+  // Tlačidlá v sekcii
+  &__button {
+    margin-top: 8px;
+    border: 0;
+    padding: 7px 20px;
+    border-radius: 3px;
+    font-family: $font-secondary;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: $line-height-base;
+    text-align: center;
+    color: $background-color;
+    background: $primary-color;
+    transition: $transition-default;
+    box-shadow: $box-shadow;
+
+    &:hover,
+    &:active {
+      background: $primary-color-hover;
+    }
+  }
+}
+
+// Responzívne nastavenia pre väčšie obrazovky
+@media (max-width: $breakpoint-lg) {
+  .content {
+    &__grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+
+// Responzívne nastavenia pre malé obrazovky
+@media (max-width: $breakpoint-sm) {
+  .content {
+    &__grid {
+      grid-template-columns: 1fr;
+    }
+  }
+}

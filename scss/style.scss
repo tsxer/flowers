@@ -1,0 +1,26 @@
+// Importovanie základných resetov a premenných
+@import "normalize"; // Základné nastavenia na zabezpečenie jednotného vzhľadu naprieč prehliadačmi
+@import "vars"; // Globálne premenné ako farby, veľkosti a breakpoints
+@import "base"; // Základné globálne štýly a resety
+
+// Importovanie častí webovej aplikácie pre stránku landing
+@import "blocks/landing/header"; // Hlavičková časť webu
+@import "blocks/landing/brand-section"; // Sekcia značky
+@import "blocks/landing/services-section"; // Sekcia služieb
+@import "blocks/landing/featured-section"; // Sekcia s doporučeným obsahom
+@import "blocks/landing/shop-section"; // Sekcia obchodu
+@import "blocks/landing/footer"; // Pätička stránky
+
+// Importovanie častí pre produktové sekcie
+@import "blocks/products/slogan-section"; // Sekcia s motivačným sloganom
+@import "blocks/products/content-section"; // Obsahová časť produktov
+
+// Importovanie sekcií otázok a odpovedí (FAQ) a alergénov
+@import "blocks/qna/faq-section"; // Sekcia často kladených otázok
+@import "blocks/qna/allegry-section"; // Sekcia alergénov
+
+// Importovanie kontaktného formulára
+@import "blocks/contact/contact-section"; // Kontaktná časť webu
+
+// Importovanie vďačnosti (ďakujeme) na záverečnej stránke
+@import "blocks/thanks/thanks-section"; // Sekcia s poďakovaním

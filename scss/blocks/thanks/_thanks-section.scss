@@ -1,0 +1,31 @@
+// Sekcia "Poďakovanie"
+.thanks {
+  // Obal pre celú sekciu
+  &__wrapper {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  // Nadpis v sekcii
+  &__title {
+    text-align: center;
+    font-weight: 500;
+    font-size: 58px;
+    line-height: $line-height-xxl;
+    color: $primary-color;
+    margin-bottom: 24px;
+  }
+}
+
+// Responzívne nastavenia pre menšie obrazovky
+@media (max-width: $breakpoint-md) {
+  .thanks {
+    &__title {
+      font-size: 42px;
+      line-height: 60px;
+      margin-bottom: 20px;
+    }
+  }
+}

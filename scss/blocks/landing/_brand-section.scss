@@ -1,0 +1,49 @@
+//  Hlavná sekcia značky
+.brand {
+  max-width: 520px; 
+  margin-inline: auto; 
+  text-align: center; 
+  flex-grow: 1; 
+  display: flex; 
+  flex-direction: column; 
+  justify-content: center; 
+  height: 100vh; 
+
+  // Štýly pre nadpis v sekcii značky
+  &__title {
+    font-weight: 500; 
+    font-size: $font-size-xxl; 
+    line-height: $line-height-xxl; 
+    color: $primary-color; 
+    margin-bottom: 24px; 
+  }
+
+  // Štýly pre popis v sekcii značky
+  &__description {
+    font-weight: 400; 
+    font-size: $font-size-medium; 
+    line-height: $line-height-large; 
+    opacity: 0.8; 
+  }
+}
+
+// Responzívne nastavenia pre menšie obrazovky
+@media (max-width: $breakpoint-lg) {
+  .brand {
+    margin-top: 130px; 
+    margin-bottom: 80px; 
+    height: 100%; 
+
+    // Zmena veľkosti nadpisu
+    &__title {
+      font-size: $font-size-xl; 
+      line-height: $line-height-xl; 
+    }
+
+    // Zmena veľkosti popisu
+    &__description {
+      font-size: $font-size-base; 
+      line-height: $line-height-base; 
+    }
+  }
+}

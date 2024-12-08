@@ -1,0 +1,92 @@
+// Sekcia pätičky stránky
+.footer {
+  border-top: 1px solid $primary-color; // Horná hranica pre pätičku
+  padding: 60px 20px;
+
+  // Riadok v pätičke
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+
+  // Stĺpec v pätičke
+  &__column {
+    max-width: 300px;
+  }
+
+  // Nadpis 1 v pätičke
+  &__title1 {
+    color: $primary-color;
+    font-size: $font-size-large;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 5px;
+    margin-bottom: 5px;
+  }
+
+  // Nadpis 2 v pätičke
+  &__title2 {
+    font-weight: 500;
+    font-size: $font-size-base;
+    line-height: $line-height-small;
+    padding: 5px;
+  }
+
+  // Popis v pätičke
+  &__description {
+    color: $gray-color;
+    font-size: $font-size-small;
+    line-height: $line-height-base;
+    padding: 5px;
+  }
+
+  // Podnadpis v pätičke
+  &__subtitle {
+    font-weight: 500;
+    font-size: 16px;
+    padding: 5px;
+    margin-bottom: 5px;
+  }
+
+  // Odkazy v pätičke
+  &__links {
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  // Individuálny odkaz
+  &__link {
+    font-size: 14px;
+    margin-bottom: 10px;
+    transition: $transition-default;
+  }
+
+  // Efekt na nažehlenie myšou
+  &__link:hover {
+    color: $primary-color;
+  }
+
+  // Kredity v pätičke
+  &__credits {
+    font-size: $font-size-large;
+    font-weight: 400;
+    padding: 5px;
+  }
+}
+
+// Responzívne nastavenia pre menšie obrazovky
+@media (max-width: $breakpoint-md) {
+  .footer {
+    &__row {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    &__credits {
+      text-align: center;
+    }
+  }
+}

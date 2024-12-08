@@ -1,0 +1,139 @@
+// Sekcia feedback
+.feedback {
+  margin-top: 50px;
+  margin-bottom: 80px;
+
+  // Kontajner pre formulár
+  &__form-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  // Úvodná časť formulára
+  &__intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 15px;
+  }
+
+  // Nadpis
+  &__title {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: $line-height-large;
+  }
+
+  // Popis pod nadpisom
+  &__description {
+    max-width: 250px;
+    text-align: center;
+  }
+
+  // Input pre formulár
+  &__form-input {
+    padding: 8px 0 8px 13px;
+    border: 1px solid $border-color;
+    border-radius: 3px;
+    opacity: 0.5;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  // Textarea pre formulár
+  &__form-textarea {
+    padding: 8px 0 8px 13px;
+    border: 1px solid $border-color;
+    border-radius: 3px;
+    opacity: 0.5;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  // Checkbox
+  &__form-checkbox {
+    margin-bottom: 10px;
+  }
+
+  // Tlačidlo odoslania formulára
+  &__form-button {
+    border: 0;
+    padding: 7px 20px;
+    border-radius: 3px;
+    font-family: $font-secondary;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: $line-height-base;
+    text-align: center;
+    color: $background-color;
+    background: $primary-color;
+    transition: $transition-default;
+    box-shadow: $box-shadow;
+  }
+}
+
+// Wrapper pre centrálny obsah
+.wrapper {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 10px;
+}
+
+// Wrapper pre obrázky
+.img-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+
+  img {
+    max-height: 375px;
+    max-width: 300px;
+  }
+}
+
+// Responzívne nastavenia
+@media (max-width: $breakpoint-md) {
+  .feedback {
+    margin-top: 30px;
+    margin-bottom: 50px;
+
+    &__form-container {
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    &__title {
+      font-size: 24px;
+    }
+
+    &__description {
+      max-width: 100%;
+    }
+
+    &__form-input,
+    &__form-textarea {
+      width: 90%;
+    }
+
+    &__form-button {
+      padding: 10px;
+      font-size: 15px;
+    }
+
+    &__form-group--checkbox {
+      margin-bottom: 10px;
+    }
+  }
+
+  .img-wrapper img {
+    max-width: 250px;
+    max-height: 250px;
+  }
+}
